@@ -7,8 +7,11 @@ describe('pigLatin', function() {
   it("will determine whether a word begins with a vowel or not", function() {
     expect(pigLatin("unicorn")).to.equal("unicornay");
   });
+});
+
+describe('pigLoop', function() {
 
   it("will run a loop until a vowel in a word is reached and 'ay' is added to the end", function() {
-    expect(pigLatin("steal")).to.equal("ealstay");
+    expect(pigLoop("steal")).to.equal("teals");
   });
 });
